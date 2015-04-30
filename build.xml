@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="PageObjectPageFactory">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="SeleniumJars.userclasspath">
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/apache-mime4j-0.6.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/bsh-1.3.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/cglib-nodep-2.1_3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-codec-1.8.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-collections-3.2.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-exec-1.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-io-2.2.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-jxpath-1.3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-lang3-3.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/commons-logging-1.1.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/cssparser-0.9.11.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/dom4j-1.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/fluent-hc-4.2.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/guava-15.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/hamcrest-core-1.3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/hamcrest-library-1.3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/htmlunit-2.13.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/htmlunit-core-js-2.13.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/httpclient-4.3.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/httpcore-4.3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/httpmime-4.3.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/ini4j-0.5.2.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/jcommander-1.29.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/jetty-websocket-8.1.8.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/jna-3.4.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/jna-platform-3.4.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/json-20080701.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/junit-4.11.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/junit-dep-4.11.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/jxl.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/log4j-1.2.14.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/mail.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/nekohtml-1.9.19.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/netty-3.5.7.Final.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/operadriver-1.5.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/phantomjsdriver-1.1.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/poi-3.6-20091214.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/poi-ooxml-3.6-20091214.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/poi-ooxml-schemas-3.6-20091214.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/protobuf-java-2.4.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/robotium-solo-5.0.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/sac-1.3.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/saxon-8.7.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/SaxonLiaison.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/selenium-java-2.40.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/selenium-java-2.40.0-srcs.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/selenium-server-standalone-2.34.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/serializer-2.7.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/testng-6.0.1-nobsh-noguice.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/testng-6.8.5.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/testng-xslt-maven-plugin-test-0.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/webbit-0.4.8-SNAPSHOT.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/xalan-2.7.1.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/xercesImpl-2.10.0.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/xml-apis-1.4.01.jar"/>
+        <pathelement location="D:/Selenium Webdriver and Java/jars-core/xmlbeans-2.3.0.jar"/>
+    </path>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.testng.eclipse_6.8.6.20141201_2240/lib/testng.jar"/>
+    </path>
+    <path id="PageObjectPageFactory.classpath">
+        <pathelement location="bin"/>
+        <path refid="SeleniumJars.userclasspath"/>
+        <path refid="TestNG.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="PageObjectPageFactory.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
