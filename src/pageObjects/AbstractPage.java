@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 
-
+//Abstract class
 public class AbstractPage {
 	
 	protected WebDriver driver;
