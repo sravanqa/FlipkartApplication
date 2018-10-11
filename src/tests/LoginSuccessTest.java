@@ -17,7 +17,7 @@ public class LoginSuccessTest extends AbstractTestDriver{
 		
 		MainPage onMainPage = new MainPage(driver);
 		HomePage onHomePage=onMainPage.navigateHomePage().loginLink().fillLoginDetails("sravansan18@gmail.com","ssskmr18").submitLogin();
-		onMainPage= onHomePage.logOut();
+		onMainPage= onHomePage.logOut(); //edit text
 	}
 	
 	
