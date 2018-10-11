@@ -24,6 +24,7 @@ public class AbstractTestDriver {
 	public void closeDriver() {
 		
 		//driver.close();
+		//driver.quit();
 	}
 	
 }
